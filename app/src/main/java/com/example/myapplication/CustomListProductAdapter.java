@@ -55,7 +55,9 @@ public class CustomListProductAdapter extends ArrayAdapter {
         btnLvSua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Product product = data.get(position);
                 Intent i = new Intent(context, UpdateproductActivity.class);
+                i.putExtra("PRODUCT_ID", product.getId());
                 Toast.makeText(context, "Thêm thành công", Toast.LENGTH_SHORT).show();
                 context.startActivity(i);
             }

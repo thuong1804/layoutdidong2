@@ -19,7 +19,7 @@
             android:text="Thêm ảnh"
             android:textColor="#000"
             android:src="@drawable/iphone"
-            android:id="@+id/imgSelectProduct"
+            android:id="@+id/imgSelectProductUpdate"
             ></ImageView>
 
     </LinearLayout>
