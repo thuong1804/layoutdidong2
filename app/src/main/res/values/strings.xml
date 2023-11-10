@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="spnTypeProduct">Ngành Hàng
+        <item>Iphone</item>
+        <item>SamSung</item>
+        <item>Nokia</item>
+    </string-array>
+</resources>

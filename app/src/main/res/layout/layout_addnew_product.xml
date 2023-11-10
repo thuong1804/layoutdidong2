@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/backgroundMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        >
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnback"
+            android:background="@drawable/buttonback"
+            android:layout_marginRight="20dp"
+            >
+        </Button>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/addnewproduct"
+            android:padding="0dp"
+            >
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Thêm ảnh"
+            android:textColor="#000"
+            android:src="@drawable/iphone"
+            android:id="@+id/imgSelectProduct"
+            ></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:paddingTop="40dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#EFE8E8"
+                android:layout_marginLeft="20dp">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#EFE8E8"
+                android:layout_marginLeft="20dp"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#EFE8E8"
+                android:layout_marginLeft="20dp">
+
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+        <EditText
+            android:id="@+id/idProduct"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID">
+
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm *">
+        </TextView>
+        <EditText
+            android:id="@+id/txtInputNameProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên sản phẩm">
+
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả sản phẩm *">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mô tả sản phẩm"
+            android:id="@+id/txtDesProduct">
+        </EditText>
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnTypeProduct"
+            >
+        </Spinner>
+        <EditText
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hinh anh"
+            android:id="@+id/txtImage">
+        </EditText>
+<!--        <Spinner-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/spnclassifyProduct"-->
+<!--            >-->
+<!--        </Spinner>-->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá *">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập giá"
+            android:inputType="number"
+            android:id="@+id/txtPriceProduct">
+        </EditText>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kho hàng *">
+        </TextView>
+
+
+
+    </LinearLayout>
+    <Button
+       android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="150dp"
+        android:text="Lưu"
+        android:id="@+id/btnSaveProduct"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button_action">
+
+    </Button>
+
+</LinearLayout>
